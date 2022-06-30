@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+#logo{
+  height: 60px;
+  width: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 600px) {
+  #logo{
+    height: 50px;
+    width: 50px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#price-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 600px) {
+  #price-card{
+    grid-template-columns: 1fr;
+  }
+#low-price,#medium-price,#high-price{
+  width: 350px;
+}
+
+}
+#low-price,#medium-price,#high-price{
+  height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+ul{
+  font-weight: bold;
+}
+.menu{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background: ghostwhite;
+}
+.imageSize{
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
